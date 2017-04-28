@@ -1,0 +1,104 @@
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    outline: none;
+    box-shadow: none;
+    background-color: green;
+}
+
+li button {
+    background-color: white;
+}
+
+.form * {
+    margin-left:80px;
+    display: inline;
+
+
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: transparent;
+}
+.inputs {
+    width: 73%;
+    font-size: 3em;
+    border-radius: 10px 10px 10px 10px;
+    outline: none;
+    text-align: center;
+}
+
+.inputButton {
+    border: 0;
+    width:9%;
+    font-size: 3em;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.lists {
+    display: block;
+    font-size: 2em;
+    list-style-type: none;
+    padding: 0;
+}
+
+.lists li {
+    text-align: center;
+    height: 2em;
+    background-color: gray;
+    padding: 0
+}
+
+.lists li:nth-child(odd) {
+    background-color: lightgray;
+}
+
+.lists li .item {
+    position: absolute;
+    width: 80%;
+    font-size: 1.5em;
+    left: 0;
+    height: inherit;
+}
+
+.lists li .clickable:hover {
+    cursor: pointer;
+}
+
+.lists li button {
+    float: right;
+    width: 9%;
+    height: inherit;
+    font-size: 1.5em;
+}
+
+.backButton {
+    color: white;
+}
+
+.backButton:hover {
+    cursor: pointer;
+}
+
+ #completeList .clickable {
+     text-decoration: line-through;
+     color: green;
+ }
+.header3 {
+
+    width: 80%;
+    font-size: 10em;
+    border-radius: 10px 10px 10px 10px;
+    outline: none;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}

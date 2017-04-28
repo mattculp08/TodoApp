@@ -1,0 +1,25 @@
+<style>
+    .completedList
+    {
+        text-decoration: line-through; !important;
+        color:green !important;
+    }
+</style>
+
+<div align="center" class="header3">Enter a todo</div>
+<div class='form'>
+    <input type='text' id='todoTitle' class='inputs' ng-model='viewTitle'>
+    <button class='inputButton' ng-click='createList()'> + </button>
+</div>
+<br><br><br><br>
+<ul class='lists'>
+    <li ng-repeat='(key, value) in lists'>
+        <span class='item clickable'ng-class="{'completedList': !completedList}"   ng-click='gotoList(key)'> {{ key }} ({{ value.length }}) items</span>
+        <button id='deleteList' ng-click='deleteList(key)'>x</button>
+        <button  ng-click="completedList = !completedList" ng-show="completedList"> Done</button>
+
+    </li>
+</ul>
+
+
+
